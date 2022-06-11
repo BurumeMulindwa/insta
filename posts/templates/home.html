@@ -1,7 +1,7 @@
 <h1>Django Image Uploading</h1>
 <ul>
-  {% for post in post_list %}
-    <h2>{{ title }}</h2>
-    <img src="{{ cover.url}}" alt="{{ title }}">
+  {% for posts in post_list %}
+    <h2>{{ posts.title }}</h2>
+    <img src="{{ posts.cover.url}}" alt="{{ posts.title }}">
   {% endfor %}
 </ul>
